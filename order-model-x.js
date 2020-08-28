@@ -8,7 +8,7 @@ describe('Tests on tesla.com', () => {
         expect(titleElm.waitForExist({timeoutMsg: "Element title not found. The page couldn't be loaded in time."})).to.be.true
     });
     it('go to model X page', () => {
-        menuItemModelX = ${'#block-mainheadernavigation > ol > li:nth-child(3) > a'}
+        menuItemModelX = $('#block-mainheadernavigation > ol > li:nth-child(3) > a')
         menuItemModelX.click()
         const title = 'Model X | Tesla Česko'
         const titleElm = $(`//title[contains(text(),"${title}")]`)
@@ -16,7 +16,7 @@ describe('Tests on tesla.com', () => {
         expect(titleElm.waitForExist({timeoutMsg: "Element title not found. The page couldn't be loaded in time."})).to.be.true
     });
     it('click to order model X', () => {
-        orderModelX = ${'.hero-callouts--button a'}
+        orderModelX = $('.hero-callouts--button a')
         orderModelX.click()
         const title = 'Navrhněte si svůj Model X | Tesla'
         const titleElm = $(`//title[contains(text(),"${title}")]`)
