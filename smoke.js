@@ -1,6 +1,6 @@
 // Save this script to smoke.js
 describe('Smoke monitoring on tesla.com', () => { 
-    describe('HomePage', () => {
+    describe('HomePageeee', () => {
       it('open', () => {
         browser.url('https://www.tesla.com/')
         console.log(browser.getTitle())
